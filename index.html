@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/style.css">
 </head>
+
 <body>
-    
+  <div class="wrapper wrapper_background">
+    <header class="header">
+      <div class="wrapper__container header__container">
+        <div class="maintitle wrapper__maintitle header__maintitle">
+          <img class="maintitle__logo" src="img/logo.png" alt="Delevery Food">
+          <h1 class="maintitle__text">Delevery<br>Food</h1>
+        </div>
+        <div class="usermenu header__usermenu">
+          <a href="" class="button usermenu__button usermenu__button_auth"><img class="button__icon" src="img/user.svg" alt="">Вход</a>
+          <a href="" class="button usermenu__button usermenu__button_cart"><img class="button__icon" src="img/cart.svg" alt=""> Корзина</a>
+        </div>
+      </div>
+    </header>
+    <section class="baner">
+      <div class="wrapper__container">
+
+        <!-- Слайдер -->
+
+          <div class="swiper-container baner__swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-scrollbar"></div> -->  
+          </div>
+
+      </div>
+    </section>
+
+    <nav class="nav">
+      <div class="wrapper__container nav__container">
+        <ul class="nav__mainmenu nav__mainmenu_horisontal">
+          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Комбо</a></li>
+          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Пиццы</a></li>
+          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Закуски</a></li>
+          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Напитки</a></li>
+          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Другие товары</a></li>
+          <li class="nav__item"><a href=# class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href=# class="nav__link">Контакты</a></li>
+        </ul>
+        <div class="search nav__search">
+          <input type="search" class="search__text" name="search" autocomplete="off">
+          <input type="submit" class="search__button" value="">
+        </div>
+      </div>
+    </nav>
+    <section class="content">
+      <div class="wrapper__container">
+
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper__container">
+
+      </div>
+    </footer>
+  </div>
 </body>
+
+<script src="dist/script.js"></script>
+
 </html>
