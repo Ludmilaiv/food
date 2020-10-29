@@ -19,8 +19,8 @@
           <h1 class="maintitle__text">Delevery<br>Food</h1>
         </div>
         <div class="usermenu header__usermenu">
-          <a href="" class="button usermenu__button usermenu__button_auth"><img class="button__icon" src="img/user.svg" alt="">Вход</a>
-          <a href="" class="button usermenu__button usermenu__button_cart"><img class="button__icon" src="img/cart.svg" alt=""> Корзина</a>
+          <a href="" class="button usermenu__button button_contrast"><img class="button__icon" src="img/user.svg" alt="">Вход</a>
+          <a href="" class="button usermenu__button button_light open-modal" id="cart"><img class="button__icon" src="img/cart.svg" alt=""> Корзина</a>
         </div>
       </div>
     </header>
@@ -50,11 +50,11 @@
     <nav class="nav">
       <div class="wrapper__container nav__container">
         <ul class="menu nav__menu menu_horisontal">
-          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Комбо</a></li>
-          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Пиццы</a></li>
-          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Закуски</a></li>
-          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Напитки</a></li>
-          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Другие товары</a></li>
+          <li class="menu__item menu__item_bold"><a href="#combo-link" class="menu__link">Комбо</a></li>
+          <li class="menu__item menu__item_bold"><a href="#pizza-link" class="menu__link">Пиццы</a></li>
+          <li class="menu__item menu__item_bold"><a href="#snacks-link" class="menu__link">Закуски</a></li>
+          <li class="menu__item menu__item_bold"><a href="#drink-link" class="menu__link">Напитки</a></li>
+          <li class="menu__item menu__item_bold"><a href="#other-link" class="menu__link">Другие товары</a></li>
           <li class="menu__item"><a href=# class="menu__link">О нас</a></li>
           <li class="menu__item"><a href=# class="menu__link">Контакты</a></li>
         </ul>
@@ -67,6 +67,7 @@
     <section class="content">
       <div class="wrapper__container content__container">
 
+        <a name="combo-link" class="wrapper__anchor"></a>
         <h1 class="content__header">Комбо</h1>
 
         <a href="#" class="card content__card" id="combo">
@@ -103,6 +104,7 @@
         <div class="content__card-empty"></div>
         <div class="content__card-empty"></div>
 
+        <a name="pizza-link" class="wrapper__anchor"></a>
         <h1 class="content__header">Пиццы</h1>
 
         <a href="#" class="card content__card" id="pizza">
@@ -168,7 +170,8 @@
         <!-- Заглушки для ячеек, где карточек не будет-->
         <div class="content__card-empty"></div>
         <div class="content__card-empty"></div>
-
+        
+        <a name="snacks-link" class="wrapper__anchor"></a>
         <h1 class="content__header">Закуски</h1>
 
         <a href="#" class="card content__card" id="snacks">
@@ -205,6 +208,7 @@
         <div class="content__card-empty"></div>
         <div class="content__card-empty"></div>
 
+        <a name="drink-link" class="wrapper__anchor"></a>
         <h1 class="content__header">Напитки</h1>
 
         <a href="#" class="card content__card" id="drink">
@@ -241,6 +245,7 @@
         <div class="content__card-empty"></div>
         <div class="content__card-empty"></div>
 
+        <a name="other-link" class="wrapper__anchor"></a>
         <h1 class="content__header">Другие товары</h1>
 
         <a href="#" class="card content__card" id="other">
@@ -302,6 +307,52 @@
       </div>
     </footer>
   </div>
+
+  <div class="modal modal_fixed modal-cart" id="modal-cart">
+		<div class="modal__dialog">
+			<div class="modal__header">
+				<h3 class="modal__title">Корзина</h3>
+				<button class="button modal__close">&times;</button>
+			</div>
+			<div class="modal__body">
+				<div class="modal-cart__row">
+					<span class="modal-cart__name">Пицца "Цезарь" маленькая</span>
+					<strong class="modal-cart__price">200₽</strong>
+					<div class="counter modal-cart__counter">
+						<button class="button counter__button">-</button>
+						<span class="counter__value">1</span>
+						<button class="button counter__button">+</button>
+					</div>
+        </div>
+        <div class="modal-cart__row">
+					<span class="modal-cart__name">Пицца "Цезарь" маленькая</span>
+					<strong class="modal-cart__price">200₽</strong>
+					<div class="counter modal-cart__counter">
+						<button class="button counter__button">-</button>
+						<span class="counter__value">1</span>
+						<button class="button counter__button">+</button>
+					</div>
+        </div>
+        <div class="modal-cart__row">
+					<span class="modal-cart__name">Пицца "Цезарь" маленькая</span>
+					<strong class="modal-cart__price">200₽</strong>
+					<div class="counter modal-cart__counter">
+						<button class="button counter__button">-</button>
+						<span class="counter__value">1</span>
+						<button class="button counter__button">+</button>
+					</div>
+        </div>
+			</div>
+			<div class="modal__footer">
+				<span class="modal__pricetag">1250 ₽</span>
+				<div class="modal__buttons">
+					<button class="button modal__button button_contrast button_left">Оформить заказ</button>
+					<button class="button modal__button button_light">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 
 <script src="dist/script.js"></script>

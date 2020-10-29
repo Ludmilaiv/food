@@ -1,0 +1,64 @@
+.modal
+  &_fixed
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.4)
+    z-index: 999
+    justify-content: center
+    align-items: center
+    display: none
+    opacity: 0
+    transition: opacity 0.3s
+  &_open
+    display: flex
+    transition: opacity 0.3s
+  &__dialog
+    max-width: 43.333rem
+    width: 95%
+    max-height: 100%
+    overflow: auto
+    background: $bgcolor-card
+    border-radius: 5px
+    margin: auto
+    padding: 2.222rem 2.5rem
+    line-height: 1.15
+  &__header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 2.5rem
+  &__body
+    margin-bottom: 1.222rem
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    margin: 0
+    font-weight: bold
+    font-size: 2rem
+    line-height: 2.333rem
+  &__close
+    font-size: 2rem
+    border: none
+    background-color: transparent
+  &__pricetag
+    background: #262626
+    border-radius: 5px
+    color: #ffffff
+    padding: 0.833rem 1.111rem
+    font-size: 1.111rem
+    line-height: 1.278rem
+  &__buttons
+    display: flex
+    align-items: center
+  &__button
+    display: flex
+    align-items: center
+    padding: 0.444rem 0.889rem
+    border-radius: 2px
+    font-size: 0.889rem
+    line-height: 1.333rem
