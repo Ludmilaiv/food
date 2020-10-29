@@ -12,7 +12,7 @@
 
 <body>
   <div class="wrapper wrapper_background">
-    <header class="header">
+    <header class="header header-fixed">
       <div class="wrapper__container header__container">
         <div class="maintitle wrapper__maintitle header__maintitle">
           <img class="maintitle__logo" src="img/logo.png" alt="Delevery Food">
@@ -35,10 +35,7 @@
                   <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="baner__image" style="background-image: url('img/slider/image1.png');"></div>
+                  <div class="baner__image" style="background-image: url('img/slider/image2.jpg');"></div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -52,14 +49,14 @@
 
     <nav class="nav">
       <div class="wrapper__container nav__container">
-        <ul class="nav__mainmenu nav__mainmenu_horisontal">
-          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Комбо</a></li>
-          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Пиццы</a></li>
-          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Закуски</a></li>
-          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Напитки</a></li>
-          <li class="nav__item nav__item_bold"><a href=# class="nav__link">Другие товары</a></li>
-          <li class="nav__item"><a href=# class="nav__link">О нас</a></li>
-          <li class="nav__item"><a href=# class="nav__link">Контакты</a></li>
+        <ul class="menu nav__menu menu_horisontal">
+          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Комбо</a></li>
+          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Пиццы</a></li>
+          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Закуски</a></li>
+          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Напитки</a></li>
+          <li class="menu__item menu__item_bold"><a href=# class="menu__link">Другие товары</a></li>
+          <li class="menu__item"><a href=# class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href=# class="menu__link">Контакты</a></li>
         </ul>
         <div class="search nav__search">
           <input type="search" class="search__text" name="search" autocomplete="off">
@@ -68,13 +65,240 @@
       </div>
     </nav>
     <section class="content">
-      <div class="wrapper__container">
+      <div class="wrapper__container content__container">
+
+        <h1 class="content__header">Комбо</h1>
+
+        <a href="#" class="card content__card" id="combo">
+          <div class="card__image" style="background-image: url('../img/catalog/image1.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца плюс</h3>
+            <h3 class="card__price"><span id="price">900</span> ₽</h2>
+            <div class="card__info">
+              Пицца + закуски
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="combo">
+          <div class="card__image" style="background-image: url('../img/catalog/image2.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Тануки</h3>
+            <h3 class="card__price"><span id="price">900</span> ₽</h2>
+            <div class="card__info">
+              Японский набор
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="combo">
+          <div class="card__image" style="background-image: url('../img/catalog/image3.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">FoodBand</h3>
+            <h3 class="card__price"><span id="price">900</span> ₽</h2>
+            <div class="card__info">
+              Пицца цезарь + Сладкая пицца + Салат цезарь
+            </div>
+          </div>
+        </a>
+        <!-- Заглушки для ячеек, где карточек не будет-->
+        <div class="content__card-empty"></div>
+        <div class="content__card-empty"></div>
+
+        <h1 class="content__header">Пиццы</h1>
+
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image4.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца "Цезарь" маленькая/h3>
+            <h3 class="card__price"><span id="price">200</span> ₽</h2>
+            <div class="card__info">
+              25 см. Соус Цезарь, сыр пармезан, сыр моцарелла, куриная грудка, салат айсберг, помидоры черри.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image5.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца "Цезарь" средняя</h3>
+            <h3 class="card__price"><span id="price">400</span> ₽</h2>
+            <div class="card__info">
+              30 см. Соус Цезарь, сыр пармезан, сыр моцарелла, куриная грудка, салат айсберг, помидоры черри.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image6.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца "Цезарь" большая</h3>
+            <h3 class="card__price"><span id="price">600</span> ₽</h2>
+            <div class="card__info">
+              35 см. Соус Цезарь, сыр пармезан, сыр моцарелла, куриная грудка, салат айсберг, помидоры черри.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image7.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца классическая маленькая</h3>
+            <h3 class="card__price"><span id="price">200</span> ₽</h2>
+            <div class="card__info">
+              25 см. Ветчина,сыр Гауда,сыр Моцарелла, помидорки и восхитительный соус.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image8.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца классическая средняя</h3>
+            <h3 class="card__price"><span id="price">400</span> ₽</h2>
+            <div class="card__info">
+              30см. Ветчина,сыр Гауда,сыр Моцарелла, помидорки и восхитительный соус.
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="pizza">
+          <div class="card__image" style="background-image: url('../img/catalog/image9.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Пицца классическая большая</h3>
+            <h3 class="card__price"><span id="price">600</span> ₽</h2>
+            <div class="card__info">
+              35 см. Ветчина,сыр Гауда,сыр Моцарелла, помидорки и восхитительный соус.и
+            </div>
+          </div>
+        </a>
+        <!-- Заглушки для ячеек, где карточек не будет-->
+        <div class="content__card-empty"></div>
+        <div class="content__card-empty"></div>
+
+        <h1 class="content__header">Закуски</h1>
+
+        <a href="#" class="card content__card" id="snacks">
+          <div class="card__image" style="background-image: url('../img/catalog/image10.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Салат "Цезарь"</h3>
+            <h3 class="card__price"><span id="price">400</span> ₽</h2>
+            <div class="card__info">
+              
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="snacks">
+          <div class="card__image" style="background-image: url('../img/catalog/image11.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Шаурма</h3>
+            <h3 class="card__price"><span id="price">200</span> ₽</h2>
+            <div class="card__info">
+              200 г. Свежие листья салата айсберг, цыплёнок, томаты черри, сыры чеддер и пармезан, моцарелла, сливочный соус, соус цезарь  
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="snacks">
+          <div class="card__image" style="background-image: url('../img/catalog/image12.png')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Чизбургер</h3>
+            <h3 class="card__price"><span id="price">200</span> ₽</h2>
+            <div class="card__info">
+              Тут будет информация об этой закуске
+            </div>
+          </div>
+        </a>
+        <!-- Заглушки для ячеек, где карточек не будет-->
+        <div class="content__card-empty"></div>
+        <div class="content__card-empty"></div>
+
+        <h1 class="content__header">Напитки</h1>
+
+        <a href="#" class="card content__card" id="drink">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Кока-кола</h3>
+            <h3 class="card__price"><span id="pricek">100</span> ₽</h2>
+            <div class="card__info">
+              0,7 л
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="drink">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Кофе Латте</h3>
+            <h3 class="card__price"><span id="price">200</span> ₽</h2>
+            <div class="card__info">
+              200 мл
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="drink">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Тархун</h3>
+            <h3 class="card__price"><span id="price">50</span> ₽</h2>
+            <div class="card__info">
+              0.5 л
+            </div>
+          </div>
+        </a>
+        <!-- Заглушки для ячеек, где карточек не будет-->
+        <div class="content__card-empty"></div>
+        <div class="content__card-empty"></div>
+
+        <h1 class="content__header">Другие товары</h1>
+
+        <a href="#" class="card content__card" id="other">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Какой-то товар</h3>
+            <h3 class="card__price"><span id="pricek">900</span> ₽</h2>
+            <div class="card__info">
+              Описание какого-то товара
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="other">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Какой-то товар</h3>
+            <h3 class="card__price"><span id="price">900</span> ₽</h2>
+            <div class="card__info">
+              Описание какого-то товара
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card content__card" id="other">
+          <div class="card__image" style="background-image: url('../img/catalog/image13.jpg')"></div>
+          <div class="card__text">
+            <h3 class="card__title">Какой-то товар</h3>
+            <h3 class="card__price"><span id="price">900</span> ₽</h2>
+            <div class="card__info">
+              Описание какого-то товара
+            </div>
+          </div>
+        </a>
+        <!-- Заглушки для ячеек, где карточек не будет-->
+        <div class="content__card-empty"></div>
+        <div class="content__card-empty"></div>
 
       </div>
-    </section>
-    <footer class="footer">
-      <div class="wrapper__container">
 
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper__container footer__container">
+        <div class="maintitle wrapper__maintitle footer__maintitle">
+          <img class="maintitle__logo" src="img/logo.png" alt="Delevery Food">
+          <h1 class="maintitle__text maintitle__text-small">Delevery<br>Food</h1>
+        </div>
+        <ul class="menu footer__menu menu_horisontal">
+          <li class="menu__item"><a href=# class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href=# class="menu__link">Работа</a></li>
+          <li class="menu__item"><a href=# class="menu__link">Партнёрам</a></li>
+          <li class="menu__item"><a href=# class="menu__link">Контакты</a></li>
+        </ul>
+        </nav>
+        <div class="social footer__social">
+          <a href=# class="social__link social__link-insta" id="insta"></a>
+          <a href=# class="social__link social__link-facebook" id="facebook"></a>
+          <a href=# class="social__link social__link-vk" id="vk"></a>
+        </div>
       </div>
     </footer>
   </div>

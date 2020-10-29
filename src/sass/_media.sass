@@ -1,21 +1,72 @@
 @media all and (max-width: 1200px) 
   html 
     font-size: $font-size-main - 1
+  .content
+    &__header
+      text-align: center
+    &__container
+      justify-content: center
+    &__card
+      &-empty
+        margin: 0 1rem 0 1rem
+      margin: 0 1rem 2rem 1rem
 
 @media all and (max-width: 992px) 
   html 
     font-size: $font-size-main - 2
+  .baner
+    &__swiper
+      &-container
+        height: 13rem
+  .nav
+    &__container
+      flex-direction: column-reverse
+      align-items: center
+    &__search
+      margin-bottom: 0.9rem
+  .footer
+    &__container
+      flex-direction: column
+    &__menu
+      margin-left: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
   
 
 @media all and (max-width: 768px) 
   html
     font-size: $font-size-main - 3
-  
+  .baner
+    &__swiper
+      &-container
+        height: 10rem
+  .nav
+    &__container
+      justify-content: center
+  .menu
+    &_horisontal
+      width: 28rem
+      max-width: 100%
+      flex-wrap: wrap
+      justify-content: center
+    &__item
+      margin-bottom: 0.5rem
 
 @media all and (max-width: 480px) 
   html 
     font-size: $font-size-main - 4
+  .wrapper
+    &_background
+      padding-top: 9rem
   .header
     &__container 
       flex-direction: column
+  .baner
+    &__swiper
+      &-container
+        height: 7rem
+  .nav
+    &__search
+      max-width: 100%
+  
   

@@ -1,0 +1,25 @@
+.content
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__header
+    font-size: 2rem
+    margin-bottom: 1.576rem
+    width: 100%
+  &__card
+    &:hover
+      box-shadow: 0 0 20px transparentize($color-hover, 0.6)
+    &-empty
+      width: 21.333rem
+      height: 0
+    display: block
+    width: 21.333rem
+    height: auto
+    margin: 0 0 2rem 0
+    background: $bgcolor-card
+    border-radius: 7px
+    overflow: hidden
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1)
+    text-decoration: none
+    transition: box-shadow 0.3s
